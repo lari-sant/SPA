@@ -1,0 +1,29 @@
+<div class="col-md-12 d-flex justify-content-center mt-5" id="contato">
+    <div>
+        <h3 class="text-center mb-4 text-monospace">Cadastre produto </h3>
+
+        <div class="form-group">
+            <label class="text-monospace">Nome</label>
+                    <input type="text" class="form-control" id="titulo" 
+                        placeholder="Digite o nome" [(ngModel)]="produto.nome">
+        </div>
+        <div class="form-group">
+            <label class="text-monospace">Valor</label>
+            <input type="number" class="form-control" id="titulo"
+                placeholder="Digite aqui o valor" [(ngModel)]="produto.preco">
+            </div>
+        <div class="form-group">
+            <label class="text-monospace">Imagem do produto</label>
+            <input type="text" class="form-control" id="titulo" 
+                placeholder="Digite URL" [(ngModel)]="produto.imagem">
+            
+        </div>
+        <div class="form-group">
+            <label class="text-monospace">Quantidade do produto</label>
+            <input type="number" class="form-control" id="titulo" 
+                placeholder="Digite a quantidade do produto" [(ngModel)]="produto.qtdEstoque">
+        </div>
+
+    </div>
+
+</div>

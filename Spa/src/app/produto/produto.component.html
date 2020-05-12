@@ -1,0 +1,45 @@
+<div class="container">
+
+    <div class="row mt-5 mb-5">
+        <div class="col-md-4">
+            <div class="card border-0 " style="width: 18rem;">
+                <div class="d-flex justify-content-center">
+                    <img class="card-img-top  " src="{{produto.imagem}}" alt="Imagem de capa do card">
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-md-8">
+           
+            <div>
+                <div class="form-group">
+                    <label class="text-monospace" >Nome</label>
+                    <input type="text" class="form-control" id="titulo" 
+                        placeholder="Digite o nome" [(ngModel)]="produto.nome">
+                </div>
+                <div class="form-group">
+                    <label class="text-monospace" >Valor</label>
+                    <input type="text" class="form-control" id="titulo" 
+                        placeholder="Digite o valor" [(ngModel)]="produto.preco">
+                </div>
+                <div class="form-group">
+                    <label class="text-monospace" >Imagem:</label>
+                    <input type="text" class="form-control" id="titulo" 
+                        placeholder="Digite URL" [(ngModel)]="produto.imagem">
+                </div>
+
+                <div class="form-group">
+                    <label class="text-monospace" >Quantidade de produto</label>
+                    <input type="number" class="form-control" id="titulo" 
+                        placeholder="Digite a quantidade de produto" [(ngModel)]="produto.qtdEstoque">
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-info w-25" (click)="atualizar()">Atualizar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
